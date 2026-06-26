@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Web</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <h1 id="titulo-principal">POKÉDEX WEB</h1>
+
+    <p>
+        Aquí podrás buscar y consultar información detallada de tus Pokémon favoritos en tiempo real.
+    </p>
+
+    <div class="contenedor-principal">
+        <form class="formulario" id="form-busqueda">
+
+            <label>Pokémon:</label>
+            <input type="text" id="pokemon-buscar" placeholder="Ej: pikachu o 25" required>
+
+            <br><br>
+
+            <button id="btn-buscar" type="submit">
+                Buscar Pokémon
+            </button>
+
+            <button id="btn-limpiar" type="button">
+                Limpiar
+            </button>
+
+        </form>
+
+        <div class="contenedor-imagen">
+            <img src="img/img.png" alt="" id="imagen-decorativa">
+        </div>
+    </div>
+
+    <div id="resultado-pokemon" style="display: none; text-align: center; margin-top: 30px;">
+        <div class="tarjeta-pokemon">
+            <h2 id="poke-nombre" style="text-transform: uppercase; color: darkblue;"></h2>
+            <img id="poke-img" src="" alt="Pokémon" style="width: 150px; height: auto;">
+            <p><strong>ID:</strong> <span id="poke-id"></span></p>
+            <p><strong>Altura:</strong> <span id="poke-altura"></span> m</p>
+            <p><strong>Peso:</strong> <span id="poke-peso"></span> kg</p>
+            <p><strong>Experiencia Base:</strong> <span id="poke-experiencia"></span> exp</p>
+            <p><strong>Tipo:</strong> <span id="poke-tipo"></span></p>
+            <p><strong>Habilidades:</strong> <span id="poke-habilidades"></span></p>
+        </div>
+    </div>
+
+    <h3 style="text-align: center; margin-top: 40px; color: darkblue;">HISTORIAL DE BÚSQUEDA</h3>
+    <table class="tabla-libros" border="1" id="tabla-historial">
+        <tr>
+            <th>Pokémon</th>
+            <th>Tipo Principal</th>
+            <th>Peso</th>
+        </tr>
+    </table>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
