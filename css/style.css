@@ -1,1 +1,174 @@
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
 
+h1, h3{
+    text-align: center;
+    color: blue;
+}
+
+form{
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: beige;
+}
+
+label{
+    display: inline-block;
+    width: 80px;
+    font-weight: bold;
+}
+
+p{
+    text-align: center;
+    font-size: 16px;
+}
+
+input{
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+table{
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td{
+    border: 1px solid black;
+}
+
+th{
+    background-color: #3498db;
+    color: white;
+}
+
+th,
+td{
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#titulo-principal{
+    color: darkblue;
+}
+
+.formulario{
+    box-shadow: 0px 0px 10px gray;
+    margin: 0;
+}
+
+#btn-buscar{
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#btn-limpiar {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.contenedor-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+/* IMAGEN DECORATIVA */
+.contenedor-imagen img{
+    width: 180px;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.contenedor-imagen img:hover {
+    transform: scale(1.1);
+}
+
+.tarjeta-pokemon {
+    display: inline-block;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+    min-width: 300px;
+}
+
+.tarjeta-pokemon p {
+    text-align: left;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px){
+    form{
+        width: 90%;
+    }
+
+    input{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    table{
+        width: 100%;
+    }
+
+    .contenedor-principal{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px){
+    h1{
+        font-size: 24px;
+    }
+
+    label{
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    button{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #btn-limpiar {
+        margin-left: 0;
+    }
+
+    body{
+        margin: 10px;
+    }
+}
